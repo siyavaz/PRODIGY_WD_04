@@ -1,0 +1,102 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    transition: background 0.5s ease;
+    background-size: cover;
+    background-position: center;
+    background-image: url('default.jpeg'); /* Default background image */
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95); /* Adjust opacity as needed */
+    padding: 30px; /* More padding for better spacing */
+    border-radius: 15px; /* More rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+    width: 300px; /* Fixed width for consistency */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.search-box {
+    margin-bottom: 20px;
+}
+
+#locationInput {
+    padding: 10px;
+    width: calc(100% - 22px); /* Adjust for padding and border */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.weather-info {
+    margin-top: 20px;
+    color: #333;
+}
+
+.weather-info p {
+    margin: 10px 0;
+}
+
+.weather-icon {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+}
+
+#searchButton {
+    padding: 10px 25px;
+    border-radius: 4px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px; /* Slightly larger font */
+}
+
+#searchButton:hover {
+    background-color: #45a049;
+}
+
+/* Background classes for different weather conditions */
+.clear {
+    background-image: url('clear.jpeg');
+}
+
+.clouds {
+    background-image: url('cloud.jpeg');
+}
+
+.rain {
+    background-image: url('rain.jpeg');
+}
+
+.snow {
+    background-image: url('snow.jpeg');
+}
+
+.thunderstorm {
+    background-image: url('thunderstorm.jpeg');
+}
+
+.drizzle {
+    background-image: url('drizzle.jpeg');
+}
+
+.mist {
+    background-image: url('mist.jpeg');
+}
+
+body.clear, body.clouds, body.rain, body.snow, body.thunderstorm, body.drizzle, body.mist {
+    background-size: cover;
+    background-position: center;
+}
